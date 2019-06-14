@@ -1,3 +1,22 @@
-body{
-  background-color: red;
+//Fuentes
+$montserrat: 'Montserrat', sans-serif;
+
+
+//---->Entorno
+h1,h2,h3,h4,h5,h6{
+  font-family: $montserrat;
 }
+p{
+  font-size: 15px;
+  font-family: $montserrat;
+}
+
+//Colors
+$white: #ffffff;
+$black: #000000;
+$light-lila: #b641f6;
+$soft-lila: #8e2de2;
+$medium-lila: #4f03e0;
+$dark-lila: #3e186d;
+//---->Button or a background
+$gradient-btn-bg: linear-gradient(67deg, rgba(142,45,226,1) 0%, rgba(111,24,225,1) 45%, rgba(111,24,225,1) 45%, rgba(74,0,224,1) 100%);
