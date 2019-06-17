@@ -12,7 +12,29 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+.btn.btn-small {
+  padding: 0.1rem 1.3rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3e186d;
+}
+
+.btn.bg-gradient {
+  background-color: linear-gradient(67deg, #8e2de2 0%, #6f18e1 45%, #6f18e1 45%, #4a00e0 100%);
+}
+
 .navbar .navbar-transparent {
-  background-color: transparent;
+  background-color: #3e186d;
+}
+
+.navbar .navbar-nav .nav-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-item.active {
+  font-weight: 700;
 }
 
