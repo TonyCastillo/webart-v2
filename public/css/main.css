@@ -13,15 +13,29 @@ p {
 }
 
 .btn.btn-small {
-  padding: 0.1rem 1.3rem;
+  padding: .2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #3e186d;
+  font-size: 13px;
 }
 
 .btn.bg-gradient {
   background-color: linear-gradient(67deg, #8e2de2 0%, #6f18e1 45%, #6f18e1 45%, #4a00e0 100%);
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn.btn-small {
+    font-size: 15px;
+  }
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .navbar .navbar-transparent {
@@ -31,10 +45,76 @@ p {
 .navbar .navbar-nav .nav-item {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  margin: 0 10px;
+  margin: 0 5px;
+  font-weight: 700;
 }
 
-.navbar .navbar-nav .nav-item.active {
-  font-weight: 700;
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  transition: all ease .3s;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: #b641f6;
+}
+
+.navbar .navbar-nav .nav-item:last-child {
+  margin-bottom: 30px;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #4f03e0;
+}
+
+.navbar .contacto {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar .navbar-nav {
+    margin-right: 100px;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin: 0 15px;
+  }
+
+  .navbar .navbar-nav .nav-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar .contacto {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    padding: 1rem 5rem;
+  }
+
+  .navbar .navbar-nav {
+    margin-right: 80px;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+
+  .navbar .navbar-nav .nav-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+section.heroSection {
+  width: 100%;
+  height: 100vh;
+  background: #8e2de2;
+  background: linear-gradient(-135deg, #8e2de2 0%, #0f0c29 100%);
 }
 

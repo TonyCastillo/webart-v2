@@ -21,17 +21,27 @@ $dark-lila: #3e186d;
 //---->Button or a background
 $gradient-btn-bg: linear-gradient(67deg, rgba(142,45,226,1) 0%, rgba(111,24,225,1) 45%, rgba(111,24,225,1) 45%, rgba(74,0,224,1) 100%);
 
-//BOTONES
+@mixin gradient-sections{
+  background: rgb(142,45,226);
+  background: linear-gradient(-135deg, rgba(142,45,226,1) 0%, rgba(15,12,41,1) 100%);
+}
+
+  //BOTONES
 .btn{
   &.btn-small{
-    padding: .1rem 1.3rem;
+    padding: .2rem 1.1rem;
     border-radius: 1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     color: $dark-lila;
-
+    font-size: 13px;
   }
   &.bg-gradient{
     background-color:  $gradient-btn-bg;
+  }
+  @media only screen and (min-width: 1200px){
+    &.btn-small{
+      font-size: 15px;
+    }
   }
 }

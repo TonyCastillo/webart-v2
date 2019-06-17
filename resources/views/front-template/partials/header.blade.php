@@ -1,5 +1,4 @@
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="logo">
             <a class="navbar-brand" href="#">Navbar</a>
         </div>
@@ -26,4 +25,3 @@
             </div>
         </div>
     </nav>
-</div>

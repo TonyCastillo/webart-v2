@@ -1,4 +1,6 @@
 @extends('front-template.layout')
 @section('body')
-    holas este es el body
+    <section class="heroSection">
+
+    </section>
     @endsection
