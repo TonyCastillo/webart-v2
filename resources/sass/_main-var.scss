@@ -36,8 +36,17 @@ $gradient-btn-bg: linear-gradient(67deg, rgba(142,45,226,1) 0%, rgba(111,24,225,
     color: $dark-lila;
     font-size: 13px;
   }
+  &.btn-large{
+    padding: .7rem 1.9rem;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+  }
   &.bg-gradient{
-    background-color:  $gradient-btn-bg;
+    background:  $gradient-btn-bg;
   }
   @media only screen and (min-width: 1200px){
     &.btn-small{
