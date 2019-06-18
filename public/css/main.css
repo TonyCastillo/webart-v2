@@ -13,7 +13,7 @@ p {
 }
 
 .btn.btn-small {
-  padding: 0.2rem 1.1rem;
+  padding: .2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -22,7 +22,7 @@ p {
 }
 
 .btn.btn-large {
-  padding: 0.7rem 1.9rem;
+  padding: .7rem 1.9rem;
   border-radius: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -32,7 +32,7 @@ p {
 }
 
 .btn.bg-gradient {
-  background: linear-gradient(67deg, #8e2de2 0%, #6f18e1 45%, #6f18e1 45%, #4a00e0 100%);
+  background: linear-gradient(-23deg, #4a00e0 0%, #8e2de2 100%);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -58,7 +58,7 @@ p {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #e7c8f9;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -124,6 +124,7 @@ section.heroSection {
   background: #8e2de2;
   background: linear-gradient(-135deg, #8e2de2 0%, #0f0c29 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .homeSlider {
@@ -141,6 +142,10 @@ section.heroSection {
   height: 100%;
 }
 
+.homeSlider .box-slider .descripContent {
+  padding: 20px;
+}
+
 .homeSlider .box-slider .descripContent .title {
   font-size: 45px;
   font-weight: 700;
@@ -151,6 +156,27 @@ section.heroSection {
 .homeSlider .box-slider .descripContent .content {
   font-size: 15px;
   color: #dbc9ec;
+}
+
+.homeSlider .box-slider .descripContent .btn-large {
+  position: relative;
+}
+
+.homeSlider .box-slider .descripContent .btn-large::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  background: #8e2de2;
+  background: linear-gradient(0deg, #8e2de2 0%, #4a00e0 100%);
+  transform: translate(-50%, -50%);
+  border-radius: 1.2rem;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  z-index: -1;
+  transition: all ease .3s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -212,5 +238,42 @@ section.heroSection {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+.spaceSection {
+  width: 116%;
+  height: 100vh;
+  position: absolute;
+  left: -3px;
+  top: 0;
+}
+
+.spaceSection > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right bottom;
+     object-position: right bottom;
+}
+
+.spaceSection .spaceNav {
+  border: solid 1px red;
+  width: 250px;
+  position: absolute;
+  right: -10%;
+  bottom: -8%;
+  opacity: .6;
+  transition: all ease .3s;
+}
+
+.spaceSection .spaceNav img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  display: none;
 }
 

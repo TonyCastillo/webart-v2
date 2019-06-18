@@ -49361,8 +49361,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\webart-v2\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\webart-v2\resources\sass\main.scss */"./resources/sass/main.scss");
+__webpack_require__(/*! C:\Users\Win10TonyCastillo\Desktop\DESARROLLO-web\webarts\webart-v2\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Win10TonyCastillo\Desktop\DESARROLLO-web\webarts\webart-v2\resources\sass\main.scss */"./resources/sass/main.scss");
 
 
 /***/ })
