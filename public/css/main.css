@@ -315,8 +315,6 @@ section.heroSection {
   bottom: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  -webkit-animation: animate1 30s linear infinite alternate;
-          animation: animate1 30s linear infinite alternate;
   opacity: .5;
 }
 
@@ -329,9 +327,8 @@ section.heroSection {
   left: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
+  background-position: 387px;
   opacity: .4;
-  -webkit-animation: animate2 15s linear infinite alternate;
-          animation: animate2 15s linear infinite alternate;
 }
 
 .spaceSection .wave1:before {
@@ -346,7 +343,6 @@ section.heroSection {
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
   opacity: 1;
-  animation: animate1 45s linear infinite reverse;
 }
 
 @-webkit-keyframes animate1 {
@@ -392,6 +388,54 @@ section.heroSection {
 section.about {
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background: #d8c3dd;
+  background: linear-gradient(0deg, #d8c3dd 25%, #e3d4e6 100%);
+  margin-bottom: 400px;
+  position: relative;
+}
+
+section.about .footer-section {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+section.about .footer-section .cloud {
+  width: 70%;
+  height: 300px;
+  text-align: center;
+  position: absolute;
+  bottom: -192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.about .footer-section .cloud img {
+  width: 100%;
+}
+
+section.about .footer-section .cloud.\--left {
+  left: -70px;
+}
+
+section.about .footer-section .cloud.\--right {
+  right: -70px;
+  z-index: 5;
+}
+
+section.about .footer-section .cloud.\--top {
+  left: -6%;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(-139deg);
+}
+
+.greatTitle h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1.5rem;
 }
 

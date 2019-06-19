@@ -217,7 +217,7 @@ section.heroSection{
     //border: solid 1px red;
     background-image: url("/image/nave/onda-v1.png");
     background-size: cover;
-    animation: animate1 30s linear infinite alternate;
+    //animation: animate1 30s linear infinite alternate;
     opacity: .5;
     &:after{
       content: '';
@@ -230,8 +230,9 @@ section.heroSection{
       //opacity: .5;
       background-image: url("/image/nave/onda-v1.png");
       background-size: cover;
+      background-position: 387px;
       opacity: .4;
-      animation: animate2 15s linear infinite alternate;
+      //animation: animate2 15s linear infinite alternate;
     }
     &:before{
       content: '';
@@ -246,7 +247,8 @@ section.heroSection{
       background-size: cover;
       animation-delay: .8s;
       opacity: 1;
-      animation: animate1 45s linear infinite reverse;
+      //display: none;
+      //animation: animate1 45s linear infinite reverse;
     }
   }
   @keyframes animate1 {
@@ -270,5 +272,55 @@ section.heroSection{
 section.about{
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  //background-color: #fff;
+  background: rgb(216,195,221);
+  background: linear-gradient(0deg, rgba(216,195,221,1) 25%, rgba(227,212,230,1) 100%);
+  margin-bottom: 400px;
+  position: relative;
+  .footer-section{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    .cloud{
+      width: 70%;
+      height: 300px;
+      text-align: center;
+      position: absolute;
+      bottom: -192px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //display: none;
+      img{
+        //@include objetfit_img(cover, center, center);
+        width: 100%;
+      }
+      &.--left{
+        left: -70px;
+        //border:solid 1px red;
+      }
+      &.--right{
+        right: -70px;
+        z-index: 5;
+        //border:solid 1px yellow;
+      }
+      &.--top{
+        left: -6%;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(-139deg);
+        //border:solid 1px yellow;
+      }
+    }
+  }
+
+}
+.greatTitle{
+  h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 1.5rem;
+  }
 }

@@ -30,7 +30,22 @@
             <div class="wave1"></div>
         </div>
     </section>
-    <section class="about">
+    <section class="about px-5">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-md-5 border border-warning">
+                    <div class="greatTitle">
+                        <h1>¡Estamos aquí para hacer que su sitio web se vea más elegante y con estilo!</h1>
+                    </div>
+                </div>
+                <div class="col-md-7 border border-warning"></div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="cloud --left"><img src="/image/cloud/cloud-02.png" alt=""></div>
+            <div class="cloud --right"><img src="/image/cloud/cloud-03.png" alt=""></div>
+            <div class="cloud --top"><img src="/image/cloud/cloud-03.png" alt=""></div>
 
+        </div>
     </section>
     @endsection
