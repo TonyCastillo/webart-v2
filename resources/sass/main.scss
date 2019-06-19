@@ -60,7 +60,7 @@
           margin-bottom: 0;
         }
       }
-      margin-right: 80px;
+      margin-right: 60px;
     }
   }
 }
@@ -72,6 +72,9 @@ section.heroSection{
   @include gradient-sections;
   position: relative;
   overflow: hidden;
+  @media only screen and (min-width: 1080px){
+    height: 800px;
+  }
 }
 .homeSlider{
   width: 90%;
@@ -167,8 +170,8 @@ section.heroSection{
       margin-top: 10px;
     //background-color: darkred !important;
       position: absolute;
-      top: -5rem;
-      left: -5rem;
+      top: 0;
+      left: -4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -176,26 +179,96 @@ section.heroSection{
   }
 }
 .spaceSection{
-  width: 116%;
-  height: 100vh;
+  width: 100%;
+  height: 50%;
   position: absolute;
-  left: -3px;
-  top: 0;
+  left: 0;
+  bottom: 0;
+  //border: solid 1px greenyellow;
+  opacity: .8;
   & >img{
-    @include objetfit_img(contain, right, bottom)
-    
+    @include objetfit_img(cover, 70%, bottom)
   }
-  .spaceNav{
-    border: solid 1px red;
-    width: 107px;
-    height: 241px;
-    position: absolute;
-    right: 49px;
-    bottom: 45px;
-    transition: all ease 0.3s;
-    img{
-      @include objetfit_img(contain,center,center);
-      //display: none;
+  @media only screen and (min-width: 600px){
+    height: 70%;
+  }
+  @media only screen and (min-width: 800px){
+    height: 90%;
+  }
+  @media only screen and (min-width: 1080px){
+    height: 800px;
+    opacity: 1;
+    & >img{
+      @include objetfit_img(contain, center, bottom)
     }
   }
+  @media only screen and (min-width: 1400px){
+    height: 100;
+    bottom: -10%;
+    & >img{
+      @include objetfit_img(cover, center, bottom)
+    }
+  }
+  .wave1{
+    width: 100%;
+    height: 401px;
+    position: absolute;
+    bottom: 0;
+    //border: solid 1px red;
+    background-image: url("/image/nave/onda-v1.png");
+    background-size: cover;
+    animation: animate1 30s linear infinite alternate;
+    opacity: .5;
+    &:after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      //background-color: red;
+      //opacity: .5;
+      background-image: url("/image/nave/onda-v1.png");
+      background-size: cover;
+      opacity: .4;
+      animation: animate2 15s linear infinite alternate;
+    }
+    &:before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      //background-color: red;
+      //opacity: .5;
+      background-image: url("/image/nave/onda-v1.png");
+      background-size: cover;
+      animation-delay: .8s;
+      opacity: 1;
+      animation: animate1 45s linear infinite reverse;
+    }
+  }
+  @keyframes animate1 {
+    0%{
+      background-position: 0;
+    }
+    100%{
+      background-position: 1300px;
+    }
+  }
+  @keyframes animate2 {
+    0%{
+      background-position: 1300px;
+    }
+    100%{
+      background-position: 0;
+    }
+  }
+}
+
+section.about{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
 }

@@ -13,7 +13,7 @@ p {
 }
 
 .btn.btn-small {
-  padding: 0.2rem 1.1rem;
+  padding: .2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -22,7 +22,7 @@ p {
 }
 
 .btn.btn-large {
-  padding: 0.7rem 1.9rem;
+  padding: .7rem 1.9rem;
   border-radius: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -58,7 +58,7 @@ p {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #e7c8f9;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -105,7 +105,7 @@ p {
   }
 
   .navbar .navbar-nav {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 
   .navbar .navbar-nav .nav-item {
@@ -125,6 +125,12 @@ section.heroSection {
   background: linear-gradient(-135deg, #8e2de2 0%, #0f0c29 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 1080px) {
+  section.heroSection {
+    height: 800px;
+  }
 }
 
 .homeSlider {
@@ -163,7 +169,7 @@ section.heroSection {
 }
 
 .homeSlider .box-slider .descripContent .btn-large::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -176,7 +182,7 @@ section.heroSection {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   z-index: -1;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -232,8 +238,8 @@ section.heroSection {
   .owl-carousel .owl-dots {
     margin-top: 10px;
     position: absolute;
-    top: -5rem;
-    left: -5rem;
+    top: 0;
+    left: -4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,38 +247,151 @@ section.heroSection {
 }
 
 .spaceSection {
-  width: 116%;
-  height: 100vh;
+  width: 100%;
+  height: 50%;
   position: absolute;
-  left: -3px;
-  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .8;
 }
 
 .spaceSection > img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: right bottom;
-     object-position: right bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70% bottom;
+     object-position: 70% bottom;
 }
 
-.spaceSection .spaceNav {
-  border: solid 1px red;
-  width: 107px;
-  height: 241px;
+@media only screen and (min-width: 600px) {
+  .spaceSection {
+    height: 70%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .spaceSection {
+    height: 90%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .spaceSection {
+    height: 800px;
+    opacity: 1;
+  }
+
+  .spaceSection > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center bottom;
+       object-position: center bottom;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .spaceSection {
+    height: 100;
+    bottom: -10%;
+  }
+
+  .spaceSection > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center bottom;
+       object-position: center bottom;
+  }
+}
+
+.spaceSection .wave1 {
+  width: 100%;
+  height: 401px;
   position: absolute;
-  right: 49px;
-  bottom: 45px;
-  transition: all ease 0.3s;
+  bottom: 0;
+  background-image: url("/image/nave/onda-v1.png");
+  background-size: cover;
+  -webkit-animation: animate1 30s linear infinite alternate;
+          animation: animate1 30s linear infinite alternate;
+  opacity: .5;
 }
 
-.spaceSection .spaceNav img {
+.spaceSection .wave1:after {
+  content: '';
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center center;
-     object-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/image/nave/onda-v1.png");
+  background-size: cover;
+  opacity: .4;
+  -webkit-animation: animate2 15s linear infinite alternate;
+          animation: animate2 15s linear infinite alternate;
+}
+
+.spaceSection .wave1:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/image/nave/onda-v1.png");
+  background-size: cover;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+  opacity: 1;
+  animation: animate1 45s linear infinite reverse;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 1300px;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 1300px;
+  }
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    background-position: 1300px;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position: 1300px;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
+
+section.about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
 }
 

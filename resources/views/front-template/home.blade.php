@@ -25,8 +25,12 @@
             </div>
         </div>
         <div class="spaceSection">
-            <div class="spaceNav"><img src="/image/nave/nave-02.png" alt=""></div>
-            <img src="/image/nave/nav-way.svg" alt="">
+            {{--<div class="spaceNav"><img src="/image/nave/nave-nueva.svg" alt=""></div>--}}
+            <img src="/image/nave/nave-completa.svg" alt="">
+            <div class="wave1"></div>
         </div>
+    </section>
+    <section class="about">
+
     </section>
     @endsection
