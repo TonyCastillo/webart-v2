@@ -217,7 +217,7 @@ section.heroSection{
     //border: solid 1px red;
     background-image: url("/image/nave/onda-v1.png");
     background-size: cover;
-    //animation: animate1 30s linear infinite alternate;
+    animation: animate1 30s linear infinite alternate;
     opacity: .5;
     &:after{
       content: '';
@@ -232,7 +232,7 @@ section.heroSection{
       background-size: cover;
       background-position: 387px;
       opacity: .4;
-      //animation: animate2 15s linear infinite alternate;
+      animation: animate2 15s linear infinite alternate;
     }
     &:before{
       content: '';
@@ -248,7 +248,7 @@ section.heroSection{
       animation-delay: .8s;
       opacity: 1;
       //display: none;
-      //animation: animate1 45s linear infinite reverse;
+      animation: animate1 45s linear infinite reverse;
     }
   }
   @keyframes animate1 {
@@ -317,10 +317,64 @@ section.about{
 
 }
 .greatTitle{
+  position: relative;
   h1{
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
-    color: $black;
+    color: #1f1e1e;
     margin-bottom: 1.5rem;
+    span{
+      color: $dark-lila;
+    }
+  }
+  &:after{
+    content: "";
+    width: 130px;
+    height: 13px;
+    border-radius: 10px;
+    @include gradient-sections;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    box-shadow: 3px 3px 7px #8e2de2;
+  }
+  &:before{
+    content: '';
+    width: 30px;
+    height: 15px;
+    border-radius: 12px;
+    background: #8e2de2;
+    position: absolute;
+    top: -9px;
+    left: 42%;
+    box-shadow: 3px 3px 7px #8e2de2;
+  }
+  @media only screen and (min-width: 1080px){
+    h1{
+      font-size: 55px;
+    }
+    &:after{
+      top: -8px;
+      left: 25%;
+    }
+  }
+}
+.box-skill{
+  padding: 56px 50px 62px 50px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 3px 35px 0px rgba(0,0,0,0.14);
+  margin-bottom: 1.5rem;
+  .icon{
+    width: 120px;
+    height: 120px;
+    border: solid 1px red;
+    margin-bottom: 1.5rem;
+    img{
+      @include objetfit_img(contain, center, center)
+    }
+  }
+  h3{
+    font-weight: 700;
   }
 }

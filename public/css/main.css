@@ -13,7 +13,7 @@ p {
 }
 
 .btn.btn-small {
-  padding: .2rem 1.1rem;
+  padding: 0.2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -22,7 +22,7 @@ p {
 }
 
 .btn.btn-large {
-  padding: .7rem 1.9rem;
+  padding: 0.7rem 1.9rem;
   border-radius: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -58,7 +58,7 @@ p {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #e7c8f9;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -169,7 +169,7 @@ section.heroSection {
 }
 
 .homeSlider .box-slider .descripContent .btn-large::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -182,7 +182,7 @@ section.heroSection {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   z-index: -1;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -252,7 +252,7 @@ section.heroSection {
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .spaceSection > img {
@@ -315,11 +315,13 @@ section.heroSection {
   bottom: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  opacity: .5;
+  -webkit-animation: animate1 30s linear infinite alternate;
+          animation: animate1 30s linear infinite alternate;
+  opacity: 0.5;
 }
 
 .spaceSection .wave1:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -328,11 +330,13 @@ section.heroSection {
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
   background-position: 387px;
-  opacity: .4;
+  opacity: 0.4;
+  -webkit-animation: animate2 15s linear infinite alternate;
+          animation: animate2 15s linear infinite alternate;
 }
 
 .spaceSection .wave1:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -340,9 +344,10 @@ section.heroSection {
   left: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   opacity: 1;
+  animation: animate1 45s linear infinite reverse;
 }
 
 @-webkit-keyframes animate1 {
@@ -432,10 +437,82 @@ section.about .footer-section .cloud.\--top {
   transform: rotate(-139deg);
 }
 
+.greatTitle {
+  position: relative;
+}
+
 .greatTitle h1 {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 700;
-  color: #000000;
+  color: #1f1e1e;
   margin-bottom: 1.5rem;
+}
+
+.greatTitle h1 span {
+  color: #3e186d;
+}
+
+.greatTitle:after {
+  content: "";
+  width: 130px;
+  height: 13px;
+  border-radius: 10px;
+  background: #8e2de2;
+  background: linear-gradient(-135deg, #8e2de2 0%, #0f0c29 100%);
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  box-shadow: 3px 3px 7px #8e2de2;
+}
+
+.greatTitle:before {
+  content: "";
+  width: 30px;
+  height: 15px;
+  border-radius: 12px;
+  background: #8e2de2;
+  position: absolute;
+  top: -9px;
+  left: 42%;
+  box-shadow: 3px 3px 7px #8e2de2;
+}
+
+@media only screen and (min-width: 1080px) {
+  .greatTitle h1 {
+    font-size: 55px;
+  }
+
+  .greatTitle:after {
+    top: -8px;
+    left: 25%;
+  }
+}
+
+.box-skill {
+  padding: 56px 50px 62px 50px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.14);
+  margin-bottom: 1.5rem;
+}
+
+.box-skill .icon {
+  width: 120px;
+  height: 120px;
+  border: solid 1px red;
+  margin-bottom: 1.5rem;
+}
+
+.box-skill .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.box-skill h3 {
+  font-weight: 700;
 }
 
