@@ -30,30 +30,37 @@
             <div class="wave1"></div>
         </div>
     </section>
-    <section class="about px-md-5">
+    <section class="about px-lg-5">
         <div class="container-fluid">
             <div class="row justify-content-between">
-                <div class="col-md-5">
-                    <div class="greatTitle py-5">
+                <div class="col-lg-5">
+                    <div class="greatTitle px-md-3 py-5">
                         <h1>¡Estamos aquí para hacer que su <span>web</span> se vea más <span>elegante</span> y con estilo!</h1>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <article class="box-skill">
-                        <div class="icon"><img src="" alt=""></div>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
-                    </article>
-                    <article class="box-skill">
-                        <div class="icon"><img src="" alt=""></div>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
-                    </article>
-                    <article class="box-skill">
-                        <div class="icon"><img src="" alt=""></div>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
-                    </article>
+                <div class="col-lg-7">
+                    <div class="d-flex justify-content-center justify-content-md-between flex-wrap">
+                        <article class="box-skill">
+                            <div class="icon"><img src="" alt=""></div>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
+                        </article>
+                        <article class="box-skill">
+                            <div class="icon"><img src="" alt=""></div>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
+                        </article>
+                        <article class="box-skill">
+                            <div class="icon"><img src="" alt=""></div>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
+                        </article>
+                        <article class="box-skill">
+                            <div class="icon"><img src="" alt=""></div>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ p {
 }
 
 .btn.btn-small {
-  padding: 0.2rem 1.1rem;
+  padding: .2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -22,7 +22,7 @@ p {
 }
 
 .btn.btn-large {
-  padding: 0.7rem 1.9rem;
+  padding: .7rem 1.9rem;
   border-radius: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -58,7 +58,7 @@ p {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #e7c8f9;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -169,7 +169,7 @@ section.heroSection {
 }
 
 .homeSlider .box-slider .descripContent .btn-large::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -182,7 +182,7 @@ section.heroSection {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   z-index: -1;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -252,7 +252,7 @@ section.heroSection {
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .spaceSection > img {
@@ -315,13 +315,11 @@ section.heroSection {
   bottom: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  -webkit-animation: animate1 30s linear infinite alternate;
-          animation: animate1 30s linear infinite alternate;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .spaceSection .wave1:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -330,13 +328,11 @@ section.heroSection {
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
   background-position: 387px;
-  opacity: 0.4;
-  -webkit-animation: animate2 15s linear infinite alternate;
-          animation: animate2 15s linear infinite alternate;
+  opacity: .4;
 }
 
 .spaceSection .wave1:before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -344,10 +340,9 @@ section.heroSection {
   left: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
   opacity: 1;
-  animation: animate1 45s linear infinite reverse;
 }
 
 @-webkit-keyframes animate1 {
@@ -401,20 +396,20 @@ section.about {
 
 section.about .footer-section {
   width: 100%;
-  height: 300px;
+  height: 200px;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
 }
 
 section.about .footer-section .cloud {
   width: 70%;
-  height: 300px;
+  height: 200px;
   text-align: center;
   position: absolute;
-  bottom: -192px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 section.about .footer-section .cloud img {
@@ -422,19 +417,53 @@ section.about .footer-section .cloud img {
 }
 
 section.about .footer-section .cloud.\--left {
-  left: -70px;
+  left: 0;
+}
+
+section.about .footer-section .cloud.\--left img {
+  margin-left: -50px;
 }
 
 section.about .footer-section .cloud.\--right {
-  right: -70px;
+  right: 0;
   z-index: 5;
 }
 
+section.about .footer-section .cloud.\--right img {
+  margin-right: -50px;
+}
+
 section.about .footer-section .cloud.\--top {
-  left: -6%;
+  left: 12%;
   right: 0;
   margin: 0 auto;
-  transform: rotate(-139deg);
+  transform: rotate(168deg);
+  /* display: none; */
+  overflow: visible;
+  /* border: solid 1px; */
+  height: 115px;
+  bottom: 50px;
+}
+
+@media only screen and (min-width: 550px) {
+  section.about {
+    padding-bottom: 75px;
+  }
+
+  section.about .footer-section .cloud {
+    height: auto;
+    overflow: visible;
+  }
+
+  section.about .footer-section .cloud.\--left,
+  section.about .footer-section .cloud.\--right {
+    overflow: hidden;
+  }
+
+  section.about .footer-section .cloud.\--left img,
+  section.about .footer-section .cloud.\--right img {
+    margin-left: 0;
+  }
 }
 
 .greatTitle {
@@ -466,15 +495,21 @@ section.about .footer-section .cloud.\--top {
 }
 
 .greatTitle:before {
-  content: "";
+  content: '';
   width: 30px;
   height: 15px;
   border-radius: 12px;
   background: #8e2de2;
   position: absolute;
   top: -9px;
-  left: 42%;
+  left: 140px;
   box-shadow: 3px 3px 7px #8e2de2;
+}
+
+@media only screen and (min-width: 650px) {
+  .greatTitle {
+    padding: 0 25px;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -489,6 +524,7 @@ section.about .footer-section .cloud.\--top {
 }
 
 .box-skill {
+  max-width: 400px;
   padding: 56px 50px 62px 50px;
   background-color: #ffffff;
   border-radius: 15px 15px 15px 15px;

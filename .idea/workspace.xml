@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad3ff55-6124-42d7-a816-911189cb7e82" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/nav-way-02.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/nav-way.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/nave-nueva.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/onda-v1-03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/ondas-02-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/ondas-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/ondas-v2-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/ondas1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/ondas2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/otro-02.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/spaceway-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/wave1-05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/wave1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/wave2-06.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/image/nave/wave2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/main.scss" afterPath="$PROJECT_DIR$/resources/sass/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/front-template/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/front-template/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/front-template/partials/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/front-template/partials/header.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +16,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46848136">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
@@ -69,12 +52,16 @@
           <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/resources/views/front-template/home.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="37" column="108" lean-forward="false" selection-start-line="37" selection-start-column="108" selection-end-line="37" selection-end-column="108" />
+                <state relative-caret-position="323">
+                  <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
                   <folding>
                     <element signature="e#93#1484#0#HTML" expanded="false" />
-                    <marker date="1560978381116" expanded="true" signature="9:32" ph="..." />
-                    <marker date="1560978381116" expanded="true" signature="43:49" ph="..." />
+                    <element signature="e#2311#2641#0#HTML" expanded="false" />
+                    <element signature="e#2666#2996#0#HTML" expanded="false" />
+                    <element signature="e#3021#3351#0#HTML" expanded="false" />
+                    <element signature="e#3376#3706#0#HTML" expanded="false" />
+                    <marker date="1561064445941" expanded="true" signature="9:32" ph="..." />
+                    <marker date="1561064445941" expanded="true" signature="43:49" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -87,11 +74,12 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/resources/sass/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="320" column="16" lean-forward="false" selection-start-line="320" selection-start-column="16" selection-end-line="320" selection-end-column="16" />
+                <state relative-caret-position="361">
+                  <caret line="393" column="15" lean-forward="false" selection-start-line="393" selection-start-column="15" selection-end-line="393" selection-end-column="15" />
                   <folding>
                     <element signature="e#2321#2432#0" expanded="false" />
-                    <element signature="e#5538#6281#0" expanded="false" />
+                    <element signature="e#4257#4626#0" expanded="false" />
+                    <element signature="e#4639#5022#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -143,7 +131,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1448" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
     <option name="height" value="876" />
@@ -420,15 +408,15 @@
       <option name="presentableId" value="Default" />
       <updated>1560524586803</updated>
       <workItem from="1560524588588" duration="10716000" />
-      <workItem from="1560559666655" duration="45639000" />
+      <workItem from="1560559666655" duration="57873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56355000" />
+    <option name="totallyTimeSpent" value="68589000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-1448" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25358167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -500,7 +488,8 @@
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding>
             <element signature="e#2321#2432#0" expanded="false" />
-            <element signature="e#5538#6281#0" expanded="false" />
+            <element signature="e#4257#4626#0" expanded="false" />
+            <element signature="e#4639#5022#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -606,23 +595,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front-template/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" column="108" lean-forward="false" selection-start-line="37" selection-start-column="108" selection-end-line="37" selection-end-column="108" />
+        <state relative-caret-position="323">
+          <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
           <folding>
             <element signature="e#93#1484#0#HTML" expanded="false" />
-            <marker date="1560978381116" expanded="true" signature="9:32" ph="..." />
-            <marker date="1560978381116" expanded="true" signature="43:49" ph="..." />
+            <element signature="e#2311#2641#0#HTML" expanded="false" />
+            <element signature="e#2666#2996#0#HTML" expanded="false" />
+            <element signature="e#3021#3351#0#HTML" expanded="false" />
+            <element signature="e#3376#3706#0#HTML" expanded="false" />
+            <marker date="1561064445941" expanded="true" signature="9:32" ph="..." />
+            <marker date="1561064445941" expanded="true" signature="43:49" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="320" column="16" lean-forward="false" selection-start-line="320" selection-start-column="16" selection-end-line="320" selection-end-column="16" />
+        <state relative-caret-position="361">
+          <caret line="393" column="15" lean-forward="false" selection-start-line="393" selection-start-column="15" selection-end-line="393" selection-end-column="15" />
           <folding>
             <element signature="e#2321#2432#0" expanded="false" />
-            <element signature="e#5538#6281#0" expanded="false" />
+            <element signature="e#4257#4626#0" expanded="false" />
+            <element signature="e#4639#5022#0" expanded="false" />
           </folding>
         </state>
       </provider>
