@@ -1,5 +1,9 @@
 console.log('hola perras');
 $('.homeSlider').owlCarousel({
     items:1,
-    loop:true,
-})
+    loop:true
+});
+$('.homegallery').owlCarousel({
+    items:1,
+    loop: true
+});

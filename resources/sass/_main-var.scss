@@ -35,6 +35,10 @@ $gradient-btn-bg: linear-gradient(-23deg, rgba(74,0,224,1) 0%, rgba(142,45,226,1
 
   //BOTONES
 .btn{
+  &:focus{
+    border: none !important;
+    box-shadow: none !important;
+  }
   &.btn-small{
     padding: .2rem 1.1rem;
     border-radius: 1rem;
@@ -51,6 +55,11 @@ $gradient-btn-bg: linear-gradient(-23deg, rgba(74,0,224,1) 0%, rgba(142,45,226,1
     color: #fff;
     font-size: 15px;
     border: none;
+    &:hover{
+      background-color: transparent;
+      background-image: linear-gradient(271deg, #0c0c0c 0%, #474747 100%);
+      box-shadow: 6px 6px 25px 0px rgba(0,0,0,0.35);
+    }
 
     //padding: .7rem 1.9rem;
     //border-radius: 1.2rem;
