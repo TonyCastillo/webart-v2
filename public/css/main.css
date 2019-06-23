@@ -13,7 +13,7 @@ p {
 }
 
 .btn.btn-small {
-  padding: .2rem 1.1rem;
+  padding: 0.2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -22,7 +22,7 @@ p {
 }
 
 .btn.btn-large {
-  padding: .7rem 1.9rem;
+  padding: 0.7rem 1.9rem;
   border-radius: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -58,7 +58,7 @@ p {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #e7c8f9;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -169,7 +169,7 @@ section.heroSection {
 }
 
 .homeSlider .box-slider .descripContent .btn-large::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -182,7 +182,7 @@ section.heroSection {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   z-index: -1;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -252,7 +252,7 @@ section.heroSection {
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .spaceSection > img {
@@ -315,11 +315,11 @@ section.heroSection {
   bottom: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .spaceSection .wave1:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -328,11 +328,11 @@ section.heroSection {
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
   background-position: 387px;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .spaceSection .wave1:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -340,8 +340,8 @@ section.heroSection {
   left: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   opacity: 1;
 }
 
@@ -495,7 +495,7 @@ section.about .footer-section .cloud.\--top {
 }
 
 .greatTitle:before {
-  content: '';
+  content: "";
   width: 30px;
   height: 15px;
   border-radius: 12px;
