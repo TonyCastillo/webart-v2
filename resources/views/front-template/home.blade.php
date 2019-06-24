@@ -67,7 +67,6 @@
     </g>
 </g>
 </svg>
-
                             </div>
                             <h3>Ere erea.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
@@ -281,8 +280,8 @@
                             <div class="great-box">
                                 <img src="/image/gallery/migaam-home-02.png" alt="">
                                 <div class="descrip">
-                                    <h3>Lorem ipsum dolor.</h3>
-                                    <h3>Lorem ipsum dolor.</h3>
+                                    <h3>Sistema de carga de facturas online.</h3>
+                                    <h3>Migaam WebApp.</h3>
                                 </div>
                             </div>
                         </div>
