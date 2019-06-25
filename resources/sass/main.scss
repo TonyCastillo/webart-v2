@@ -84,6 +84,43 @@ section.heroSection{
   left: 0;
   right: 0;
   margin: 0 auto;
+  &.owl-carousel{
+    .owl-dots{
+
+      .owl-dot{
+        margin: 15px 0;
+        span{
+          width: 12px;
+          height: 12px;
+          background-color: $soft-lila;
+        }
+        &.active{
+          span{
+            background-color: #fff;
+          }
+        }
+        &:hover span{
+          background-color: #fff;
+        }
+        &:focus{
+          border: none;
+          outline: 0;
+        }
+      }
+    }
+    @media only screen and (min-width: 1080px){
+      .owl-dots{
+        margin-top: 10px;
+        //background-color: darkred !important;
+        position: absolute;
+        top: 0;
+        left: -4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
   .box-slider{
     width: 100%;
     height: 100%;
@@ -141,43 +178,7 @@ section.heroSection{
     }
   }
 }
-.owl-carousel{
-  .owl-dots{
-    
-    .owl-dot{
-      margin: 15px 0;
-      span{
-        width: 12px;
-        height: 12px;
-        background-color: $soft-lila;
-      }
-      &.active{
-        span{
-          background-color: #fff;
-        }
-      }
-      &:hover span{
-        background-color: #fff;
-      }
-      &:focus{
-        border: none;
-        outline: 0;
-      }
-    }
-  }
-  @media only screen and (min-width: 1080px){
-    .owl-dots{
-      margin-top: 10px;
-    //background-color: darkred !important;
-      position: absolute;
-      top: 0;
-      left: -4rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-}
+
 .spaceSection{
   width: 100%;
   height: 50%;
@@ -461,17 +462,31 @@ section.about{
   }
 }
 section.gallery{
-  .greatTitle{
-    &:after, &:before{
-      display: none;
-    }
-  }
+  margin-bottom: 50px;
   .great-box{
     width: 100%;
     height: 340px;
     position: relative;
+    overflow: hidden;
     &>img{
-      @include objetfit_img(cover, center, center)
+      width: 100%;
+      height: 100%;
+      @include objetfit_img(cover, top, center);
+      transition: all ease .3s;
+    }
+    &:after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      position: absolute;
+      left: 0;
+      top:0;
+    }
+    &:hover{
+      img{
+        transform: scale(1.2) ;
+      }
     }
     .descrip{
       width: 80%;
@@ -481,12 +496,13 @@ section.gallery{
       position: absolute;
       right: 0;
       bottom: 20px;
+      z-index: 20;
       h3{
         color: #42464c;
         font-size: 10px;
         margin: 0;
         &:nth-child(2){
-          color: #2c2d2d;
+          color: $dark-lila;
           font-size: 15px;
           font-weight: 700;
           line-height: 26px;
@@ -497,8 +513,110 @@ section.gallery{
   .small-box{
     width: 100%;
     height: 220px;
+    overflow: hidden;
+    &:after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .1);
+      position: absolute;
+      left: 0;
+      top:0;
+      z-index: 1;
+    }
     img{
+      transition: all ease .3s;
       @include objetfit_img(cover, center, center);
+    }
+    &:hover{
+      img{
+        transform: scale(1.2) ;
+      }
+    }
+    &.logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        @include objetfit_img(contain, center, center);
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+  .homegallery.owl-carousel{
+    .owl-dots{
+      margin-top: 28px;
+      .owl-dot{
+        margin: 15px 0;
+        span{
+          width: 17px;
+          height: 17px;
+          background-color: #fff;
+          border: solid 1px $soft-lila;
+        }
+        &.active{
+          span{
+            border: solid 1px $soft-lila;
+            background-color: $soft-lila;
+          }
+        }
+        &:hover{
+          &.active{
+            span{
+              background-color: $soft-lila;
+            }
+          }
+          span{
+            background-color: #fff;
+            border: solid 1px $soft-lila;
+          }
+        }
+        &:focus{
+          border: none;
+          outline: 0;
+        }
+      }
+    }
+    .owl-nav{
+      width: 300px;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      img{
+        width: 50px;
+        &:focus, &:active{
+          border: none;
+          box-shadow: 0;
+          outline: 0;
+        }
+      }
+      button{
+        &:focus, &:active{
+          border: none;
+          box-shadow: 0;
+          outline: 0;
+        }
+        &:hover {
+          background: rgba(142, 45, 226, 0.12941176470588237);
+        }
+      }
+    }
+    @media only screen and (min-width: 1080px){
+      .owl-dots{
+        //margin-top: 10px;
+        ////background-color: darkred !important;
+        //position: absolute;
+        //top: 0;
+        //left: -4rem;
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+      }
     }
   }
   @media only screen and (min-width: 500px){
@@ -518,10 +636,13 @@ section.gallery{
     }
   }
   @media only screen and (min-width: 990px){
+    .great-box {
+      height: 640px;
+    }
     .cont-small-boxes{
-      height: 100%;
+      height: 640px;
       .row{
-        height: 100%;
+        height: 640px;
       }
     }
     .small-box {
@@ -531,13 +652,76 @@ section.gallery{
   }
   @media only screen and (min-width: 1200px){
     .great-box {
+      //height: 600px;
       .descrip{
         width: 80%;
+        h3{
+          &:nth-child(2){
+            font-size: 20px;
+          }
+        }
       }
     }
   }
 }
-
+.ctaContacto{
+  width: 100%;
+  padding: 70px 20px;
+  background-color: #202020;
+  background-image: linear-gradient(301deg, #0c0c0c 0%, #474747 100%);
+  p{
+    color: rgba(255,255,255,0.7);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    margin: 0;
+    text-align: center;
+  }
+  .chat-whats{
+    padding: 14px 20px;
+    border-radius: 5px;
+    background-color: #EDF8F5;
+    max-width: 600px;
+    margin: 0 auto;
+    p{
+      font-size: 15px;
+      line-height: 22px;
+      color: #5b5f62;
+      text-align: left;
+    }
+  }
+  img{
+    width: 50px;
+    margin: 0 auto;
+    display: inherit;
+  }
+  h3{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 49px;
+  }
+  .whatsappEnviar{
+    border-radius: 5px;
+    padding: 10px 17px;
+    font-size: 13px;
+    line-height: 19px;
+    height: 19px;
+    box-sizing: content-box;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color:#fff;
+    background-color: #01E675;
+    margin: 15px auto;
+  }
+  @media only screen and (min-width: 1120px){
+    .whatsappEnviar{
+      padding: 12px 30px;
+      font-size: 15px;
+    }
+  }
+}
 .box-image-cta{
   width: 100%;
   height: 400px;
@@ -584,6 +768,53 @@ section.cta{
     span{
       color: $dark-lila;
     }
+  }
+}
+.thanks{
+  width: 300px;
+  height: auto;
+  padding: 1rem;
+  border: solid 3px #1B2F47;
+  border-radius: 1rem;
+  position: relative;
+  background-color: #fff;
+  box-shadow: -11px 10px 26px -10px rgba(0,0,0,0.75);
+  .content{
+    h3{
+      font-size: 15px;
+      font-weight: 700;
+    }
+    p{
+      font-size: 12px;
+      margin: 0;
+      line-height: 15px;
+    }
+  }
+  img{
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    transform: rotate(62deg);
+  }
+  @media only screen and (min-width: 992px){
+    position: absolute;
+    left: -80%;
+    bottom: -130px;
+    //img{
+    //  width: 50px;
+    //  position: absolute;
+    //  right: 15px;
+    //  top: 9px;
+    //  transform: rotate(62deg);
+    //}
+  }
+  @media only screen and (min-width: 1200px){
+    position: absolute;
+    left: -53%;
+    top: 34%;
+    transform: rotate(-20deg);
+    bottom: initial;
   }
 }
 .normalTitle{
@@ -683,6 +914,15 @@ section.contact{
       transition: all ease .3s;
       border-left: solid 2px $dark-lila;
       border-right: solid 2px $dark-lila;
+    }
+  }
+  .quick-contact{
+    p{
+      font-weight: 700;
+      img{
+        width: 30px;
+        margin: 0 5px;
+      }
     }
   }
 }

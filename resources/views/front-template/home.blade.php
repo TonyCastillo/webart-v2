@@ -69,7 +69,7 @@
 </svg>
                             </div>
                             <h3>Ere erea.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
+                            <p>No importa desde que dispositivo accedan a página web. Paginas webs adaptables a cualquier smarphone o computadora</p>
                         </article>
                         <article class="box-skill">
                             <div class="icon">
@@ -250,7 +250,7 @@
 </svg>
                             </div>
                             <h3>Somos kape</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut. Odit non temporibus eligendi ex.</p>
+                            <p>Contamos con un proceso de asesoria y seguimiento en cada uno de nuestros proyectos. Mantenimiento de un mes</p>
                         </article>
                     </div>
                 </div>
@@ -262,57 +262,18 @@
             <div class="cloud --top"><img src="/image/cloud/cloud-03.png" alt=""></div>
         </div>
     </section>
-    <section class="gallery">
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-lg-12 text-center">--}}
-                    {{--<div class="greatTitle">--}}
-                        {{--<h1>Te presentamos a las <span>empresas</span> que confían en nosotros.</h1>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        <div class="homegallery owl-carousel owl-theme">
-            <div class="item-gallery">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6 p-0">
-                            <div class="great-box">
-                                <img src="/image/gallery/migaam-home-02.png" alt="">
-                                <div class="descrip">
-                                    <h3>Sistema de carga de facturas online.</h3>
-                                    <h3>Migaam WebApp.</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 p-0">
-                            <div class="container-fluid cont-small-boxes">
-                                <div class="row">
-                                    <div class="col-6 col-md-6 p-0">
-                                        <div class="small-box">
-                                            <img src="/image/gallery/notebook-migaam.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-6 p-0">
-                                        <div class="small-box">
-                                            <img src="http://hwr.org.uk/wp-content/uploads/2016/11/placeholder-dark-600-400-729dad18518ecd2cd47afb63f9e6eb09.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-none d-md-block p-0">
-                                        <div class="small-box">
-                                            <img src="http://hwr.org.uk/wp-content/uploads/2016/11/placeholder-dark-600-400-729dad18518ecd2cd47afb63f9e6eb09.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-none d-md-block p-0">
-                                        <div class="small-box">
-                                            <img src="http://hwr.org.uk/wp-content/uploads/2016/11/placeholder-dark-600-400-729dad18518ecd2cd47afb63f9e6eb09.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section>
+        <div class="ctaContacto ">
+            <div>
+                <img src="/image/migaam-home-02.png" class="mb-4" alt="">
+                <h3>Whatsappear</h3>
+                {{--<p>Whatsapeanos...!</p>--}}
+            </div>
+            <div>
+                <div class="chat-whats border border-dark p-3">
+                    <p>Hola! Quisiera tener una Super Pagina Web 🙌 💪... ¿Cuales son los requisitos?.</p>
                 </div>
+                <div class="text-center"><a href="https://api.whatsapp.com/send?phone=595981792647&amp;text=Hola! Quiero crear una pagina web, ¿cuales son los requisitos?." target="_blank" class="btn whatsappEnviar">Enviar</a></div>
             </div>
         </div>
     </section>
@@ -337,11 +298,137 @@
             </div>
         </div>
     </section>
-    
+    <section class="gallery">
+        <div class="homegallery owl-carousel owl-theme">
+            <div class="item-gallery">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 p-0">
+                                <div class="great-box">
+                                    <img src="/image/gallery/migaam-home-02.png" alt="">
+                                    <div class="descrip">
+                                        <h3>Sistema de carga de facturas online.</h3>
+                                        <h3>Migaam WebSystem.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <div class="container-fluid cont-small-boxes">
+                                    <div class="row">
+                                        <div class="col-6 col-md-6 p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/notebook-migaam.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-6 p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/phone--migaam.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/screencapture-web-app-migaamconsultora-dashboard-2019-06-24-10_53_29.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/screencapture-web-app-migaamconsultora-home-client-2019-06-24-10_50_57.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="item-gallery">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 p-0">
+                                <div class="great-box">
+                                    <img src="/image/gallery/screencapture-doctosalud-py-2019-06-25-13_24_25.png" alt="">
+                                    <div class="descrip">
+                                        <h3>Pagina web institucional - auto administrable.</h3>
+                                        <h3>DoctoSalud - Sanatorio Americano.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <div class="container-fluid cont-small-boxes">
+                                    <div class="row">
+                                        <div class="col-6 col-md-6 p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/notebook-docto.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-6 p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/iphone-docto.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block p-0">
+                                            <div class="small-box">
+                                                <img src="/image/gallery/docto-pic.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block p-0">
+                                            <div class="small-box logo">
+                                                <img src="/image/gallery/logo-vertical-04.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="item-gallery">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 p-0">
+                            <div class="great-box">
+                                <img src="/image/gallery/migaamweb.png" alt="">
+                                <div class="descrip">
+                                    <h3>Pagina institucional de la empresa.</h3>
+                                    <h3>Migaam S.A.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <div class="container-fluid cont-small-boxes">
+                                <div class="row">
+                                    <div class="col-6 col-md-6 p-0">
+                                        <div class="small-box">
+                                            <img src="/image/gallery/notebook-web-migaam.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 p-0">
+                                        <div class="small-box">
+                                            <img src="/image/gallery/iphone-web-migaam.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-none d-md-block p-0">
+                                        <div class="small-box">
+                                            <img src="/image/gallery/migaamweb.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-none d-md-block p-0">
+                                        <div class="small-box logo">
+                                            <img src="/image/gallery/cropped-Logo_Migaam_Consultora_Contable_147x60.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 offset-lg-6">
+                <div class="col-lg-6 offset-lg-6">
                     {{--<div class="contact-feature">--}}
                         {{--<img src="/image/contact-02.svg" alt="">--}}
                     {{--</div>--}}
@@ -363,8 +450,18 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
                                 <label>Mensaje</label>
                             </div>
-                            <button class="btn btn-large bg-gradient my-4 w-100"> Enviar</button>
+                            <button class="btn btn-large bg-gradient my-4 w-100">Enviar</button>
                         </form>
+                        <div class="quick-contact px-5">
+                            <div class="d-flex justify-content-between"><p><img src="/image/migaam-home-02.png" alt=""><a href="">+595981 792-647</a></p> <p><a href="">hola@webarts.dev</a></p> </div>
+                        </div>
+                    </div>
+                    <div class="thanks d-none d-md-block">
+                        <div class="content">
+                            <h3>Gracias por visitarnos</h3>
+                            <p>Si tienes algun comentario o sugerencia sobre tu estadia en esta web nos gustaria estar al tanto.</p>
+                        </div>
+                        <img src="/image/heary-02.svg" alt="">
                     </div>
                 </div>
             </div>
