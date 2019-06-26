@@ -27,7 +27,7 @@ a:hover {
 }
 
 .btn.btn-small {
-  padding: .2rem 1.1rem;
+  padding: 0.2rem 1.1rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -36,7 +36,7 @@ a:hover {
 }
 
 .btn.btn-large {
-  padding: .7rem 1.9rem;
+  padding: 0.7rem 1.9rem;
   border-radius: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -78,7 +78,7 @@ a:hover {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #e7c8f9;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link {
@@ -224,7 +224,7 @@ section.heroSection {
 }
 
 .homeSlider .box-slider .descripContent .btn-large::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -237,7 +237,7 @@ section.heroSection {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   z-index: -1;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -272,7 +272,7 @@ section.heroSection {
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .spaceSection > img {
@@ -335,11 +335,11 @@ section.heroSection {
   bottom: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .spaceSection .wave1:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -348,11 +348,11 @@ section.heroSection {
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
   background-position: 387px;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .spaceSection .wave1:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -360,8 +360,8 @@ section.heroSection {
   left: 0;
   background-image: url("/image/nave/onda-v1.png");
   background-size: cover;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   opacity: 1;
 }
 
@@ -527,7 +527,7 @@ section.about .footer-section .cloud.\--top {
 }
 
 .greatTitle:before {
-  content: '';
+  content: "";
   width: 30px;
   height: 15px;
   border-radius: 12px;
@@ -561,7 +561,7 @@ section.about .footer-section .cloud.\--top {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.14);
   margin-bottom: 1.5rem;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
 .contenedor-boxes-skill .box-skill .icon {
@@ -618,11 +618,11 @@ section.about .footer-section .cloud.\--top {
     color: #fff;
     background: #8e2de2;
     background: linear-gradient(-135deg, #8e2de2 0%, #0f0c29 100%);
-    transition: all ease .5s;
+    transition: all ease 0.5s;
   }
 
   .contenedor-boxes-skill .box-skill:hover .icon svg {
-    transition: all ease .5s;
+    transition: all ease 0.5s;
     fill: #fff;
   }
 }
@@ -647,11 +647,11 @@ section.gallery .great-box > img {
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 section.gallery .great-box:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -694,7 +694,7 @@ section.gallery .small-box {
 }
 
 section.gallery .small-box:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
@@ -705,7 +705,7 @@ section.gallery .small-box:after {
 }
 
 section.gallery .small-box img {
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -799,7 +799,7 @@ section.gallery .homegallery.owl-carousel .owl-nav button:active {
 }
 
 section.gallery .homegallery.owl-carousel .owl-nav button:hover {
-  background: rgba(142, 45, 226, 0.129412);
+  background: rgba(142, 45, 226, 0.1294117647);
 }
 
 @media only screen and (min-width: 500px) {
@@ -945,7 +945,7 @@ section.gallery .homegallery.owl-carousel .owl-nav button:hover {
 }
 
 .box-image-cta.back:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1042,7 +1042,7 @@ section.cta p.content span {
 }
 
 .normalTitle:after {
-  content: '';
+  content: "";
   width: 100px;
   height: 10px;
   border-radius: 20px;
@@ -1055,7 +1055,7 @@ section.cta p.content span {
 }
 
 .normalTitle:before {
-  content: '';
+  content: "";
   width: 30px;
   height: 10px;
   border-radius: 20px;
@@ -1109,6 +1109,11 @@ section.contact .contact-feature img {
      object-position: center center;
 }
 
+.contact-form {
+  position: relative;
+  z-index: 5;
+}
+
 .contact-form .input-war {
   position: relative;
   margin: 1.8rem 0;
@@ -1122,6 +1127,8 @@ section.contact .contact-feature img {
   border-radius: 0;
   border: none;
   border-bottom: solid 2px #3e186d;
+  background-color: transparent;
+  z-index: 10;
 }
 
 .contact-form .input-war .form-control:focus {
@@ -1135,7 +1142,7 @@ section.contact .contact-feature img {
 .contact-form .input-war textarea.form-control {
   border-left: solid 2px transparent;
   border-right: solid 2px transparent;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 .contact-form .input-war label {
@@ -1144,7 +1151,8 @@ section.contact .contact-feature img {
   left: 13px;
   top: 8px;
   font-weight: 500;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
+  z-index: -1;
 }
 
 .contact-form .input-war .form-control:focus ~ label,
@@ -1155,9 +1163,14 @@ section.contact .contact-feature img {
 }
 
 .contact-form .input-war textarea.form-control:focus {
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   border-left: solid 2px #3e186d;
   border-right: solid 2px #3e186d;
+}
+
+.contact-form .quick-contact {
+  width: 55%;
+  float: right;
 }
 
 .contact-form .quick-contact p {
@@ -1167,5 +1180,11 @@ section.contact .contact-feature img {
 .contact-form .quick-contact p img {
   width: 30px;
   margin: 0 5px;
+}
+
+@media only screen and (min-width: 997px) {
+  .contact-form .quick-contact {
+    width: 100%;
+  }
 }
 

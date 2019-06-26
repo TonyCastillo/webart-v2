@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-lg-8 ">
                     <div class="contenedor-boxes-skill">
-                        <article class="box-skill">
+                        <article class="box-skill wow fadeInUp" data-wow-duration=".8s">
                             <div class="icon">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="456.42px" height="456.42px" viewBox="4420.734 -2611.505 456.42 456.42"
@@ -71,7 +71,7 @@
                             <h3>Ere erea.</h3>
                             <p>No importa desde que dispositivo accedan a página web. Paginas webs adaptables a cualquier smarphone o computadora</p>
                         </article>
-                        <article class="box-skill">
+                        <article class="box-skill wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1s">
                             <div class="icon">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="456.42px" height="456.42px" viewBox="2639.107 -2611.505 456.42 456.42"
@@ -161,7 +161,7 @@
                             <h3>Te bancamos</h3>
                             <p><strong>StartUp Friendlly</strong>. Apoyamos con un trato especial a todas las startups que estan empezando, y quieren llegar lejos.</p>
                         </article>
-                        <article class="box-skill">
+                        <article class="box-skill wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1.5s">
                             <div class="icon">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="456.419px" height="456.42px" viewBox="3210.968 -2611.505 456.419 456.42"
@@ -221,7 +221,7 @@
                             <h3>Diseños re puretes</h3>
                             <p>Olvidate de las webs estaticas cuadradas y sin vida. Queremos destacarnos con nuestros clientes, queremos que seas único</p>
                         </article>
-                        <article class="box-skill">
+                        <article class="box-skill wow fadeInUp" data-wow-duration=".8s" data-wow-delay="2s">
                             <div class="icon">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="456.419px" height="456.42px" viewBox="3846.688 -2611.505 456.419 456.42"
@@ -281,7 +281,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-7 p-3 text-center">
-                    <div class="box-image-cta">
+                    <div class="box-image-cta wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                         <img src="/image/cta-img.jpg" alt="">
                     </div>
                     <div class="box-image-cta back">
@@ -452,8 +452,8 @@
                             </div>
                             <button class="btn btn-large bg-gradient my-4 w-100">Enviar</button>
                         </form>
-                        <div class="quick-contact px-5">
-                            <div class="d-flex justify-content-between"><p><img src="/image/migaam-home-02.png" alt=""><a href="">+595981 792-647</a></p> <p><a href="">hola@webarts.dev</a></p> </div>
+                        <div class="quick-contact px-lg-5">
+                            <div class="d-flex flex-wrap justify-content-end justify-content-md-between"><p><img src="/image/migaam-home-02.png" alt=""><a href="">+595981 792-647</a></p> <p><a href="">hola@webarts.dev</a></p> </div>
                         </div>
                     </div>
                     <div class="thanks d-none d-md-block">

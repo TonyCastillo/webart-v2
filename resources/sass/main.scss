@@ -885,6 +885,8 @@ section.contact{
   }
 }
 .contact-form{
+  position: relative;
+  z-index: 5;
   .input-war{
     position: relative;
     //border: solid 1px;
@@ -896,6 +898,8 @@ section.contact{
       border-radius: 0;
       border:none;
       border-bottom: solid 2px $dark-lila;
+      background-color: transparent;
+      z-index: 10;
       &:focus{
         background-color: #fff;
         border: none;
@@ -916,6 +920,7 @@ section.contact{
       top: 8px;
       font-weight: 500;
       transition: all ease .3s;
+      z-index: -1;
     }
     .form-control:focus~label, .form-control:valid ~ label{
       top: -20px;
@@ -929,12 +934,17 @@ section.contact{
     }
   }
   .quick-contact{
+    width: 55%;
+    float: right;
     p{
       font-weight: 700;
       img{
         width: 30px;
         margin: 0 5px;
       }
+    }
+    @media only screen and (min-width: 997px){
+      width: 100%;
     }
   }
 }
