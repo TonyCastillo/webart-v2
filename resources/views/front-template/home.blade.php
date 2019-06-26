@@ -4,23 +4,23 @@
         <div class="homeSlider owl-carousel owl-theme">
             <div class="box-slider">
                 <div class="descripContent">
-                    <h1 class="title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
-                    <a href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
+                    <h1 data-animation-in="fadeInUp" class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p data-animation-in="fadeInLeft" data-wow-delay="1s" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
+                    <a data-animation-in="fadeIn" data-wow-delay="2s" href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
                 </div>
             </div>
             <div class="box-slider">
                 <div class="descripContent">
-                    <h1 class="title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
-                    <a href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
+                    <h1 data-animation-in="fadeInUp" class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p data-animation-in="fadeInLeft" data-wow-delay="1s" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
+                    <a data-animation-in="fadeIn" data-wow-delay="2s" href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
                 </div>
             </div>
             <div class="box-slider">
                 <div class="descripContent">
-                    <h1 class="title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
-                    <a href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
+                    <h1 data-animation-in="fadeInUp" class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p data-animation-in="fadeInLeft" data-wow-delay="1s" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
+                    <a data-animation-in="fadeIn" data-wow-delay="2s" href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
                 </div>
             </div>
         </div>
@@ -264,13 +264,13 @@
     </section>
     <section>
         <div class="ctaContacto ">
-            <div>
+            <div class="wow fadeInDown" data-wow-duration=".5s">
                 <img src="/image/migaam-home-02.png" class="mb-4" alt="">
                 <h3>Whatsappear</h3>
                 {{--<p>Whatsapeanos...!</p>--}}
             </div>
             <div>
-                <div class="chat-whats border border-dark p-3">
+                <div class="chat-whats border border-dark p-3 wow fadeInUp" data-wow-duration=".5s"  data-wow-delay="1s">
                     <p>Hola! Quisiera tener una Super Pagina Web 🙌 💪... ¿Cuales son los requisitos?.</p>
                 </div>
                 <div class="text-center"><a href="https://api.whatsapp.com/send?phone=595981792647&amp;text=Hola! Quiero crear una pagina web, ¿cuales son los requisitos?." target="_blank" class="btn whatsappEnviar">Enviar</a></div>

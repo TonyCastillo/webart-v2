@@ -859,6 +859,18 @@ section.cta{
 
   }
 }
+.animated  {
+  -webkit-animation-duration : 3s  ;
+  animation-duration : 3s  ;
+
+  -webkit-animation-delay : 500ms  ;
+  animation-delay : 500ms  ;
+}
+
+.animate-out {
+  -webkit-animation-delay : 0ms  ;
+  animation-delay : 0ms  ;
+}
 section.contact{
   width: 100%;
   height: 100vh;
