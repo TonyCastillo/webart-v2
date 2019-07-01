@@ -1,24 +1,24 @@
 @extends('front-template.layout')
 @section('body')
-    <section class="heroSection">
+    <section id="home" class="heroSection">
         <div class="homeSlider owl-carousel owl-theme">
             <div class="box-slider">
                 <div class="descripContent">
-                    <h1 data-animation-in="fadeInUp" class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <h1 data-animation-in="fadeInUp" class="title">¿Estas listo para subir al siguiente nivel?</h1>
                     <p data-animation-in="fadeInLeft" data-wow-delay="1s" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
                     <a data-animation-in="fadeIn" data-wow-delay="2s" href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
                 </div>
             </div>
             <div class="box-slider">
                 <div class="descripContent">
-                    <h1 data-animation-in="fadeInUp" class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <h1 data-animation-in="fadeInUp" class="title">El éxito no está en lo que se hace, si no en como se hace</h1>
                     <p data-animation-in="fadeInLeft" data-wow-delay="1s" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
                     <a data-animation-in="fadeIn" data-wow-delay="2s" href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
                 </div>
             </div>
             <div class="box-slider">
                 <div class="descripContent">
-                    <h1 data-animation-in="fadeInUp" class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <h1 data-animation-in="fadeInUp" class="title">Anlisis, desarrollo, asesoria, seguimiento.</h1>
                     <p data-animation-in="fadeInLeft" data-wow-delay="1s" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta numquam molestiae beatae quae ipsum!</p>
                     <a data-animation-in="fadeIn" data-wow-delay="2s" href="#" class="btn btn-large bg-gradient">Enviar mensaje</a>
                 </div>
@@ -30,7 +30,7 @@
             <div class="wave1"></div>
         </div>
     </section>
-    <section class="about px-lg-5">
+    <section id="about" class="about px-lg-5 page-section">
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="col-lg-4 ">
@@ -262,7 +262,7 @@
             <div class="cloud --top"><img src="/image/cloud/cloud-03.png" alt=""></div>
         </div>
     </section>
-    <section>
+    <section id="whatsapp" class="page-section">
         <div class="ctaContacto ">
             <div class="wow fadeInDown" data-wow-duration=".5s">
                 <img src="/image/migaam-home-02.png" class="mb-4" alt="">
@@ -277,7 +277,7 @@
             </div>
         </div>
     </section>
-    <section class="cta">
+    <section id="cta" class="page-section cta">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-7 p-3 text-center">
@@ -285,7 +285,7 @@
                         <img src="/image/cta-img.jpg" alt="">
                     </div>
                     <div class="box-image-cta back">
-                        <img src="/image/cta-img.jpg" alt="">
+                        <img src="/image/webarts-background.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-4">
@@ -298,7 +298,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section id="gallery" class="page-section gallery">
         <div class="homegallery owl-carousel owl-theme">
             <div class="item-gallery">
                     <div class="container-fluid">
@@ -425,7 +425,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="page-section contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6">

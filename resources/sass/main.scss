@@ -1,5 +1,7 @@
 @import "main-var";
-
+html {
+  scroll-behavior: smooth;
+}
 //navBar
 .navbar{
   position: absolute;
@@ -7,6 +9,13 @@
   top: 0;
   left: 0;
   z-index: 99;
+  .logo{
+    margin-left: 1.5rem;
+    width: 200px;
+    img{
+      @include objetfit_img(contain, center, center)
+    }
+  }
   .navbar-nav{
     .nav-item{
       font-family: $montserrat;
@@ -51,6 +60,9 @@
     }
   }
   @media only screen and (min-width: 1200px){
+    .logo {
+      width: 250px;
+    }
     padding: 1rem 5rem;
     .navbar-nav{
       .nav-item{
