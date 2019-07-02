@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('front-template.home');
 });
+Route::post('contact', 'ContactController@mail');

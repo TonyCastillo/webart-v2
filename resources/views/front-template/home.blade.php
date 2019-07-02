@@ -437,17 +437,18 @@
                             <h2>¿Estas listo?</h2>
                         </div>
                         <p class="content">Un buen diseño genera confianza y una buena estructura genera acciones que se convierten en clientes.</p>
-                        <form>
+                        <form action="{{url('/contact')}}" method="POST">
+                            @csrf
                             <div class="form-group input-war">
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" required name="name">
                                 <label>Nombre</label>
                             </div>
                             <div class="form-group input-war">
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" required name="email">
                                 <label>Email</label>
                             </div>
                             <div class="form-group input-war">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required name="message"></textarea>
                                 <label>Mensaje</label>
                             </div>
                             <button class="btn btn-large bg-gradient my-4 w-100">Enviar</button>
