@@ -10,11 +10,14 @@ html {
   left: 0;
   z-index: 99;
   .logo{
-    margin-left: 1.5rem;
-    width: 200px;
+    width: 250px;
     img{
       @include objetfit_img(contain, center, center)
     }
+  }
+  .navbar-collapse{
+    background-color: rgb(39, 39, 39);
+    padding: 1rem;
   }
   .navbar-nav{
     .nav-item{
@@ -45,6 +48,13 @@ html {
     margin-bottom: 15px;
   }
   @media only screen and (min-width: 992px) {
+    .navbar-collapse{
+      background-color: transparent;
+      padding: 0;
+    }
+    .logo{
+      margin-left: 1.5rem;
+    }
     padding: 1rem 1.5rem;
     .navbar-nav{
       .nav-item{
@@ -98,7 +108,6 @@ section.heroSection{
   margin: 0 auto;
   &.owl-carousel{
     .owl-dots{
-
       .owl-dot{
         margin: 15px 0;
         span{
@@ -230,7 +239,7 @@ section.heroSection{
     //border: solid 1px red;
     background-image: url("/image/nave/onda-v1.png");
     background-size: cover;
-    //animation: animate1 30s linear infinite alternate;
+    animation: animate1 30s linear infinite alternate;
     opacity: .5;
     &:after{
       content: '';
@@ -261,7 +270,7 @@ section.heroSection{
       animation-delay: .8s;
       opacity: 1;
       //display: none;
-      //animation: animate1 45s linear infinite reverse;
+      animation: animate1 45s linear infinite reverse;
     }
   }
   @keyframes animate1 {
@@ -426,6 +435,23 @@ section.about{
     box-shadow: 0px 3px 35px 0px rgba(0,0,0,0.14);
     margin-bottom: 1.5rem;
     transition: all ease .5s;
+    position: relative;
+    span.overlay-background{
+      position: absolute;
+      background: linear-gradient(-135deg, #8e2de2 0%, #0f0c29 100%);
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: all ease .5s;
+    }
+    div.contenedor{
+      position: relative;
+      z-index: 20;
+    }
     .icon{
       width: 120px;
       height: 120px;
@@ -463,11 +489,14 @@ section.about{
       }
       &:hover{
         color: #fff;
-        @include gradient-sections;
-        transition: all ease .5s;
+        
         .icon svg{
           transition: all ease .5s;
           fill: #fff;
+        }
+        span.overlay-background{
+          transition: all ease .3s;
+          opacity: 1;
         }
       }
     }

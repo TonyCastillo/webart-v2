@@ -1,4 +1,4 @@
-{{--{{dd($data)}}--}}
+{{dd($data)}}
 
 <p>Nombre: {{$data['name']}}</p>
 <p>Apellido: {{$data['lastname']}}</p>

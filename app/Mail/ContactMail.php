@@ -16,10 +16,10 @@ class ContactMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
-        $this -> data = $data;
+        $this->data = $data;
 
     }
 
@@ -31,6 +31,6 @@ class ContactMail extends Mailable
     public function build()
     {
         //return $this->view('view.name');
-        return $this->from('noreply@ebiz.com.py')->subject('Contact WebArts|Web')->view('mail.contact-mail')->with('data', $this->data);
+        return $this->from('noreply@ebiz.com.py')->subject('Contact WebArts|Web')->view('front-template.mail.contact-mail')->with('data', $this->data);
     }
 }

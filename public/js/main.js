@@ -3,10 +3,15 @@ $('.homeSlider').owlCarousel({
     items:1,
     loop:true,
     autoplay:true,
-    autoPlay:true,
-    autoPlayTimeout:3000,
-    autoplaySpeed:2000
+    slideSpeed: 9000,
+    paginationSpeed: 8000,
+    autoplayTimeout:8000,
+    autoplaySpeed:3000
 });
+/*$('button.owl-dot').on('click',function(){
+    console.log('holas');
+    owl.trigger('play.owl.autoplay',[9000]);
+})*/
 $(document).ready(function (){
     // Declare Carousel jquery object
     var owl = $('.homeSlider');
