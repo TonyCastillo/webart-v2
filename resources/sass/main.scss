@@ -97,6 +97,9 @@ section.heroSection{
   @media only screen and (min-width: 1080px){
     height: 800px;
   }
+  @media only screen and (min-width: 1600px){
+    height: 1024px;
+  }
 }
 .homeSlider{
   width: 90%;
@@ -177,7 +180,7 @@ section.heroSection{
       }
     }
   }
-  
+
   @media only screen and (min-width: 800px){
     width: 70%;
     height: 50%;
@@ -197,6 +200,11 @@ section.heroSection{
         margin-top: 20px;
       }
     }
+  }
+  @media only screen and (min-width: 1600px){
+    width: 600px;
+    left: 15rem;
+    top: 13rem;
   }
 }
 
@@ -225,7 +233,7 @@ section.heroSection{
     }
   }
   @media only screen and (min-width: 1400px){
-    height: 100;
+    height: 100%;
     bottom: -10%;
     & >img{
       @include objetfit_img(cover, center, bottom)
@@ -271,6 +279,9 @@ section.heroSection{
       opacity: 1;
       //display: none;
       animation: animate1 45s linear infinite reverse;
+    }
+    @media only screen and (min-width: 1400px){
+        height: 601px;
     }
   }
   @keyframes animate1 {
@@ -489,7 +500,7 @@ section.about{
       }
       &:hover{
         color: #fff;
-        
+
         .icon svg{
           transition: all ease .5s;
           fill: #fff;

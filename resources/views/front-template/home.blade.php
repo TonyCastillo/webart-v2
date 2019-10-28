@@ -343,7 +343,7 @@
         </div>
     </div>
 </section>
-<section id="gallery" class="page-section gallery">
+{{-- <section id="gallery" class="page-section gallery">
     <div class="homegallery owl-carousel owl-theme">
         <div class="item-gallery">
             <div class="container-fluid">
@@ -472,7 +472,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <section id="contact" class="page-section contact">
     <div class="container">
         <div class="row">
